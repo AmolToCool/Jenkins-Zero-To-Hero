@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Back-end') {
       agent {
-        docker { image 'alpine linux' }
+        docker { image 'from alpine' }
       }
       steps {
         echo 'Welcome to Goa Singham!!!'
