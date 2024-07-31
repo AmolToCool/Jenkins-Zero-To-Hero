@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Back-end') {
       agent {
-        docker { image 'alpine' }
+        docker { image 'maven:3.8.1' }
       }
       steps {
         echo 'Welcome to Goa Singham!!!'
