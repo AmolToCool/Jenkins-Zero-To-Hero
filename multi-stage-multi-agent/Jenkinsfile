@@ -1,14 +1,14 @@
 pipeline{
   agent any
   parameters{
-    string(name: 'NamePlease', defaultValue: 'Jay-Bhim Kambale', description: 'Jayanti Vishesh')
+    string(name: 'namePlease', defaultValue: 'Jay-Bhim Kambale', description: 'Jayanti Vishesh')
     booleanParam(name: 'version', defaultValue: true, description: 'Lage raho')
   }
   stages{
     stage('build'){
       when{
         expression{
-          params.version
+          params.namePlease = 'Jay-Bhim Kambale'
         }
       }
       steps{
