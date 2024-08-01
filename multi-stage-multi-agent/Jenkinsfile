@@ -7,10 +7,10 @@ pipeline {
         sh 'node --version'
       }
     }
-  post{
+  }
+   post{
     always{
       echo 'Good Bye Singham!!!'
   }
 }
-  }
 }
