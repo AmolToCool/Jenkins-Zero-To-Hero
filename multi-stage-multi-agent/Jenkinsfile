@@ -1,21 +1,21 @@
-pipeline {
-  agent any
-  environment{
-    NAME = 'Jay Bhim'
+pipeline{
+  agent none
+  parameters{
+    string(name:'VERSION', defaultValue: '1.1.1', description: 'Version-Info')
+    booleanParam(name: 'VALUE'. defaultValue: true, description: 'Boolean value')
   }
-  stages {
-    stage('Back-end') {
-      steps {
-        echo 'Welcome to Goa Singham!!!'
+  stages{
+    stage('Backend'){
+      agent any
+      when{
+        expression{
+            params.VALUE
+        }
       }
-    }
+      steps{
+          echo 'VALUE is True'
+          echo 'Welcome to Goa Singham!!!'
+      }
   }
-   post{
-    always{
-      echo "${NAME} Good Bye Singham!!!"
-  }
-     success{
-        echo "Congrates ${NAME} for Success!!!"
-     }
 }
 }
