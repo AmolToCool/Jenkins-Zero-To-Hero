@@ -1,7 +1,7 @@
 pipeline{
   agent any
   parameters{
-    string(name: 'Jay-Bhim-Kambale', defaultValue: 'Sarya Jagachya Mhora- Aamhi sari Bhimachi Porha!!!', description: 'Geet')
+    string(name: 'JayBhimKambale', defaultValue: 'Sarya Jagachya Mhora- Aamhi sari Bhimachi Porha!!!', description: 'Geet')
     booleanParam(name: 'Jayanti', defaultValue: true, description: '14 April')
   }
 stages{
@@ -12,7 +12,7 @@ stages{
         }
       }
     steps{
-      echo "${Jay-Bhim-Kambale} Welcom Bhau!!! "
+      echo "${JayBhimKambale} Welcome Bhau!!! "
       echo "${Jayanti}"
     }
   }
