@@ -12,7 +12,7 @@ pipeline{
         }
       }
       steps{
-          echo "Welcome ${namePlease} Bhau!!!"
+          //echo "Welcome ${namePlease} Bhau!!!"
           //echo 'Savinay Jay-Bhim!!!'
       }
     }
