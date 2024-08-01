@@ -2,21 +2,15 @@ pipeline {
   agent none
   stages {
     stage('Back-end') {
-      agent {
-        docker { image 'alpine3.20' }
-      }
       steps {
         echo 'Welcome to Goa Singham!!!'
-       // sh 'mvn --version'
-      }
-    }
-    stage('Front-end') {
-      agent {
-        docker { image 'node:16-alpine' }
-      }
-      steps {
         sh 'node --version'
       }
     }
+  post{
+    always{
+      echo 'Good Bye Singham!!!'
+  }
+}
   }
 }
