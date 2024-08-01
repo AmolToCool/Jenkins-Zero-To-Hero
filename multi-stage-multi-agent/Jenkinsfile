@@ -12,7 +12,7 @@ stages{
         }
       }
     steps{
-      echo "${Jay-Bhim-Kambale} "
+      //echo "${Jay-Bhim-Kambale} "
       echo "${Jayanti}"
     }
   }
