@@ -7,7 +7,7 @@ pipeline{
     stage('build'){
       when{
         expression{
-          params.NamePlease = 'Jay-Bhim Kambale'
+          params.NamePlease =='Jay-Bhim Kambale'
         }
       }
       steps{
