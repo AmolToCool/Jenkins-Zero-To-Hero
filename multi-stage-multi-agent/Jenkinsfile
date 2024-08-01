@@ -2,7 +2,7 @@ pipeline{
   agent none
   parameters{
     string(name:'VERSION', defaultValue: '1.1.1', description: 'Version-Info')
-    booleanParam(name: 'VALUE'. defaultValue: true, description: 'Boolean value')
+    booleanParam(name: 'VALUE', defaultValue: true, description: 'Boolean value')
   }
   stages{
     stage('Backend'){
