@@ -1,21 +1,20 @@
 pipeline{
-  agent none
+  agent any
   parameters{
-    string(name:'VERSION', defaultValue: '1.1.1', description: 'Version-Info')
-    booleanParam(name: 'VALUE', defaultValue: true, description: 'Boolean value')
+    string(name: 'Jay-Bhim Kambale', defaultValue: 'Sarya Jagachya Mhora- Aamhi sari Bhimachi Porha!!!', description: 'Geet')
+    booleanParam(name: 'Jayanti', defaultValue: true, description: '14 April')
   }
-  stages{
-    stage('Backend'){
-      agent any
+stages{
+  stage('Build'){
       when{
         expression{
-            params.VALUE
+            params.Jayanti
         }
       }
-      steps{
-          echo "${VERSION} is True"
-          echo 'Welcome to Goa Singham!!!'
-      }
+    steps{
+      echo "${Jay-Bhim Kambale} "
+      echo "${Jayanti}"
+    }
   }
 }
 }
