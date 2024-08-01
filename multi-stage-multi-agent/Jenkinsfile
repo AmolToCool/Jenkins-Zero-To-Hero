@@ -12,7 +12,8 @@ pipeline{
         }
       }
       steps{
-          echo "Welcome ${NamePlease}"
+          echo "Welcome ${NamePlease} Bhau!!!"
+          echo 'Savinay Jay-Bhim!!!'
       }
     }
   }
