@@ -13,7 +13,7 @@ pipeline{
         }
       }
       steps{
-          echo "${VERSION} is True'
+          echo "${VERSION} is True"
           echo 'Welcome to Goa Singham!!!'
       }
   }
