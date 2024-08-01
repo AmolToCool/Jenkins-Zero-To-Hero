@@ -7,7 +7,6 @@ pipeline {
     stage('Back-end') {
       steps {
         echo 'Welcome to Goa Singham!!!'
-        sh 'node --version'
       }
     }
   }
@@ -15,5 +14,8 @@ pipeline {
     always{
       echo "${NAME} Good Bye Singham!!!"
   }
+     success{
+        echo "Congrates ${NAME} for Success!!!"
+     }
 }
 }
