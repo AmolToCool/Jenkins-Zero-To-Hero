@@ -1,20 +1,18 @@
 pipeline{
   agent any
   parameters{
-    string(name: 'JayBhimKambale', defaultValue: 'Sarya Jagachya Mhora Aamhi sari Bhimachi Porha!!!', description: 'Geet')
-    booleanParam(name: 'Jayanti', defaultValue: true, description: '14 April')
+    string(name: 'NamePlease', defaultValue: 'Jay-Bhim Kambale', description: 'Jayanti Vishesh')
   }
-stages{
-  stage('Build'){
+  stages{
+    stage('build'){
       when{
         expression{
-            params.Jayanti
+          params.NamePlease = 'Jay-Bhim Kambale'
         }
       }
-    steps{
-      echo " Welcome Bhau- ${JayBhimKambale}!!! "
-      echo "${Jayanti}"
+      steps{
+          echo 'Welcome ${NamePlease}'
+      }
     }
   }
-}
 }
