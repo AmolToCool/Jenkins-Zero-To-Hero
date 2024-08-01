@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment{
+    NAME = 'Jay Bhim'
+  }
   stages {
     stage('Back-end') {
       steps {
@@ -10,10 +13,7 @@ pipeline {
   }
    post{
     always{
-      echo 'Good Bye Singham!!!'
+      echo "${NAME} Good Bye Singham!!!"
   }
-     success{
-     echo 'Congrates Singham for Success!!!'
-     }
 }
 }
