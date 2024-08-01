@@ -1,5 +1,5 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Back-end') {
       steps {
@@ -12,5 +12,8 @@ pipeline {
     always{
       echo 'Good Bye Singham!!!'
   }
+     success{
+     echo 'Congrates Singham for Success!!!'
+     }
 }
 }
